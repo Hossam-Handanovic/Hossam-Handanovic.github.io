@@ -1,0 +1,337 @@
+<!--Documentation Type of HTML V5-->
+<!DOCTYPE html>
+<!--The language of Document-->
+<html lang="en">
+
+<head>
+    <!--To Support Many Languages when converting like AR,EN and FR-->
+    <meta charset="UTF-8">
+    <!--Responsive view for HTML Document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link my document Page with  External CSS Style Page-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--Small Icon Appear in the tape of Browser-->
+    <link rel="shortcut icon" href="./assets/img/Hossam Logo.png" type="image/x-icon">
+    <!--Using BOXICON Library of SVG and ICONS-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--Sweetalert.js Library Popup Animation-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Sweetalert2@.js Library Popup Animation-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--My Site Name-->
+    <title>Hossam EL Hendawy</title>
+</head>
+
+<body>
+
+    <!--Button Up To Down-->
+    <button id="back-to-top-btn"><i class='bx bx-chevrons-up' ></i> </button>
+    <!--Head Section-->
+    <header class="l-header">
+        <!--Navigation bar by using list tags there is also another way by using div section-->
+        <nav class="nav bd-grid">
+            <div>
+                <!--Here I call a boxicon library by using an italic tag and shortcut of bx-->
+                <a href="#" class="nav__logo">Hossam EL Hendawy <i class='bx bxs-badge-check' title="Verified"></i></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#Skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#My_Design" class="nav__link">My designs</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                    <li class="nav__item">
+
+                        <li> <i class='bx bx-moon bx-flashing changing-theme' id="dark1"></i> </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu '></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="the_section" id="home">
+
+
+            <div class=" home__data ">
+                <div class="container ">
+                    <!--I have two images i made them with a same width and height and give them a loop and keyframes animation-->
+                    <div class="The_Avatar">
+
+                        <a href="https://www.facebook.com/H3ndanovic" id="aa"> <img src="./assets/img/Hossam-logo.png" class="img1" title=" Hossam EL Hendawi / حسام آل هنداوي">
+                            <img src="assets/img/Hossam-logo1.png" class="img1" title=" Hossam EL Hendawi / حسام آل هنداوي"> </a>
+
+                    </div> <br><br>
+                    <h1>
+                        <!--In order to make Sweetalert Popup work you need to call the function according to onclick script attribute function as popup-->
+                        <div class="animation" onclick="popup1();">
+                            <span class="first ">Welcome in </span>
+                            <span class="oh ">
+                              <span class="second ">my Portfolio &#128075;</a></span>
+
+                            <script type="text/javascript">
+                                function popup1() {
+                                    Swal.fire({ //is traditional coding in JS like title and width//
+                                        title: 'Discover the site you will find more features for each section 👌',
+                                        width: 600,
+                                        padding: '3em',
+
+                                        backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+                                    })
+
+                                }
+                            </script>
+                            </span>
+                        </div>
+                    </h1>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!--About Me Section-->
+        <section class="about section " id="About">
+            <h2 class="section-title " id="me1">About Me <i class='bx bx-user-voice bx-tada '></i></h2>
+
+            <div class="about__container bd-grid ">
+                <div class="about__img ">
+                    <img src="assets/img/me.jpg-1.png" alt="Hossam EL Hendawi" class="the_img">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle ">I'am Hossam</h2>
+
+                    <p class="about__text ">
+
+                        My name is Hossam Ahmed EL Sayed Hassan or Hossam EL Hendawi I’m web developer I worked since 2013 in designing and programming i started with desktop app but I found myself in web and i have some works and of course not all of my works or projects are
+                        free 😂👌</p>
+
+                    <br>
+                    <p class="about__text ">
+
+                        I’m studying in
+                        <a href="https://com.tanta.edu.eg/BIS/Default.aspx" class="a1">BIS</a> department in the faculty of commerce Tanta University in 4 level grade 📕📚</p>
+
+                    <br>
+                    <p class="about__text ">
+
+                        I love video games 🎮 like <a href="https://www.ea.com/games/fifa/fifa-21" class="a1">Fifa</a> and <a href="https://www.ubisoft.com/ar-ae/game/watch-dogs/legion" class="a1">Watch Dogs</a> and of course <a href="https://www.callofduty.com/ca/en/home"
+                            class="a1">Call of duty.</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!--Skills-->
+        <section class="skills section " id="Skills">
+            <h2 class="section-title ">Skills <i class='bx bx-medal bx-tada'></i></h2>
+
+            <div class="skills__container bd-grid ">
+                <div>
+                    <h2 class="skills__subtitle ">Profesional Skills</h2>
+                    <p class="skills__text ">My skills are shown below as per to clarify for which level i have enough technique for this field 🏆</p>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name ">HTML5</span>
+
+                        </div>
+                        <div class="skills__bar skills__html ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">98%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name ">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name ">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">86%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name ">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">97%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/Cup1.gif " alt=" " class="skills__img ">
+                </div>
+            </div>
+        </section>
+
+        <!--My Design-->
+        <section class="work section " id="My_Design">
+            <h2 class="section-title ">My designs <i class='bx bx-heart-circle bx-tada'></i></h2>
+
+
+            <center>
+                <p class="skills__text ">These are my designs and also coding design I used here <i class='bx bxl-adobe bx-flashing' title="Adobe"></i> for tutorial designs and for programmig I used <i class='bx bxs-file-html bx-flashing' title="Html V5"></i> and <i class='bx bxs-file-css bx-flashing'
+                        title="CSS3"></i></p>
+            </center>
+
+
+            <div class="work__container bd-grid ">
+                <div class="work__img ">
+                    <a href="https://www.pinterest.pt/pin/701787554427446476/"> <img src="assets/img/img1.jpg.png " alt=" "></a>
+                </div>
+                <div class="work__img ">
+                    <a href="https://www.pinterest.pt/pin/701787554427446441/"> <img src="assets/img/img2.jpg.png " alt=" "></a>
+
+                </div>
+                <div class="work__img ">
+                    <a href="https://www.pinterest.pt/pin/701787554427446098/"> <img src="assets/img/img3.jpg.png " alt=" "></a>
+                </div>
+                <div class="work__img ">
+                    <a href="https://www.pinterest.pt/pin/701787554427446167/"> <img src="assets/img/img4.jpg.png " alt=" "></a>
+                </div>
+                <div class="work__img ">
+                    <a href="https://www.pinterest.pt/pin/701787554427446289/"> <img src="assets/img/img5.jpg.png " alt=" "></a>
+                </div>
+                <div class="work__img ">
+                    <a href="https://github.com/Hossam-Handanovic/Vector-Design"><img src="assets/img/img6.jpg.png " alt=" "></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section class="contact section " id="contact">
+            <h2 class="section-title ">Contact Me <i class='bx bxs-contact bx-tada'></i></h2>
+
+            <div class="contact__container bd-grid ">
+                <form action="assets/php/Form.php" name="Myform" class="contact__form" method="POST">
+                    <input type="text" placeholder="Name " name="name" class="contact__input" required>
+                    <input type="email" placeholder="Email " name="email" class="contact__input" required>
+                    <textarea placeholder="Write Your Message....." name="msg" id="text-area" cols="0 " rows="10 " class="contact__input "></textarea>
+                    <button type="submit" class="contact__button button " id="send">Send </button>
+                    <button type="reset" class="contact__button button " value="send" name="submit" id="clear">Clear </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p class="footer__title" onclick="popup5();">My Social Media</p>
+
+        <script type="text/javascript">
+            function popup5() {
+                let timerInterval
+                Swal.fire({
+                    title: 'Don’t forget to follow me 😂✌',
+                    html: 'I will close 😏 in <b></b> milliseconds.',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        timerInterval = setInterval(() => {
+                            const content = Swal.getHtmlContainer()
+                            if (content) {
+                                const b = content.querySelector('b')
+                                if (b) {
+                                    b.textContent = Swal.getTimerLeft()
+                                }
+                            }
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        console.log('I was closed by the timer')
+                    }
+                })
+
+            }
+        </script>
+
+
+
+        <div class="footer__social">
+            <a href="https://www.facebook.com/H3ndanovic" class="footer__icon " id="facebook"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/hossam_handanovic/" class="footer__icon " id="instagram"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/hossam_ehendawy" class="footer__icon " id="twitter"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/hossam-el-hendawy-21b194150/" class="footer__icon " id="linkedin"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <div>
+
+
+
+        </div>
+        <p id="find_me">You can Find me in <i class='bx bx-plus bx-rotate-180'></i> <a href="https://www.paypal.com/paypalme/HossamELHendawi?fbclid=IwAR0H3ooPEoNWnugK5JDXCFNSPFTVQNQJfQEJCWT90Bs6htzIdUwcPv2k-sU" id="span1">Support Me</a>
+        </p>
+        <br>
+        <div class="footer__social ">
+            <a href="https://github.com/Hossam-Handanovic" class="footer__icon " id="github"><i class='bx bxl-github' ></i></a>
+            <a href="https://stackoverflow.com/users/14985916/handanovic?tab=profile" class="footer__icon " id="stack"><i class='bx bxl-stack-overflow' ></i></a>
+            <a href="https://codepen.io/handanovic22" class="footer__icon " id="codepen"><i class='bx bxl-codepen' ></i></a>
+
+        </div>
+        <p>&#169; 2021 copyright all right reserved to Hossam EL Hendawy <i class='bx bxs-heart bx-flashing' style='color:#ff0000'></i></p>
+    </footer>
+
+
+    <!--SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal "></script>
+
+    <!-- MAIN JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+<!--
+
+    Hi.....
+
+    1- My name is Hossam EL Hendawi and I’m Web developer.
+    2- You can access to my account in Github and Stack over flow and also codepen.
+    3- My account in Github: https://github.com/Hossam-Handanovic
+    4- My account in Stack over flow: https://stackoverflow.com/users/14985916/handanovic?tab=profile
+    5- My account in codepen: https://codepen.io/handanovic22
+     
+    Bye.....
+-->
